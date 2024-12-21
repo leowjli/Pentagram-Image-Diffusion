@@ -2,7 +2,9 @@
 
 export async function generateImage(text: string) {
     try {
-        const response = await fetch("http://localhost:3000/api/generate-image", {
+        const apiUrl = "https://pentagram-image-diffusion.vercel.app/";
+
+        const response = await fetch(`${apiUrl}/api/generate-image`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
