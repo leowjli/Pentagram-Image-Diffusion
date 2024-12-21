@@ -2,7 +2,7 @@
 
 export async function generateImage(text: string) {
     try {
-        const apiUrl = "https://pentagram-image-diffusion.vercel.app/";
+        const apiUrl = "https://pentagram-image-diffusion.vercel.app";
 
         const response = await fetch(`${apiUrl}/api/generate-image`, {
             method: "POST",
